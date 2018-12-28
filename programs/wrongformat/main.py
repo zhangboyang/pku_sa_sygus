@@ -1,1 +1,1 @@
-print 'wrong format'
+print '\0'
