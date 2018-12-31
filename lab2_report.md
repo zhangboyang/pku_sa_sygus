@@ -1,17 +1,15 @@
 # 软件分析技术 2018 课程大作业二
 ## Syntax-Guided Program Synthesize
 ### 小组成员： 黄杨洋 张博洋 刘渊强
-### 一、 目标：给定文法 G 和约束 C ，生成程序 P 使得 P 属于 L(G) 并且 P 满足约束 C
+### 一、 目标
+* 给定文法 G 和约束 C ，生成程序 P 使得 P 属于 L(G) 并且 P 满足约束 C
 * 文法 G 的形式为 Synth-lib
 * 约束 C 的形式为 SMTlib
 * 输出 P 的形式为 SMTlib
 * 基于课程上给的Python框架
 * 使用 z3 作为 checker
-### 二、 代码目录及评测结果
-* 主要代码实现在 `programs/baseline/main.py` 中
-* 单点评测： `python programs/baseline/main.py tests/open_tests/[file].sl`
-* 评测机： `python test.py`
-* 评测结果： 在本机评测中，已通过 `open_tests` 中的 `three.sl` `tutorial.sl` `max*.sl`(所有max类型) `array_search_*.sl`(所有array_search类型)
+### 二、 评测结果
+* 在本机评测中，已通过 `open_tests` 中的 `three.sl` `tutorial.sl` `max*.sl`(所有max类型) `array_search_*.sl`(所有array_search类型)
 * 尚未通过的为 `s1` `s2` `s3` 这三个测试
 * 具体评测结果见附录
 ### 三、 算法主要设计思想
