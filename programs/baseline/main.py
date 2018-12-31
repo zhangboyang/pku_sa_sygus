@@ -182,7 +182,7 @@ if __name__ == '__main__':
                 cpcnt[cp] = cpcnt[cp] + 1
             else:
                 cpcnt[cp] = 1
-    cpcnt = sorted(cpcnt.items(), key=operator.itemgetter(1))
+    cpcnt = sorted(cpcnt.items(), key=lambda x: (x[1], x[0]))
     cp = cpcnt[-1][0]
 
     if len(funcnum) > 0:
